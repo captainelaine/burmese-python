@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Frijole|Love+Ya+Like+A+Sister);
+
+body {
+  padding: 0px;
+  margin: 0px;
+  }
+
+h1 {
+  font-family: 'Frijole', serif;
+}
+nav li a {
+  font-family: 'Love Ya Like A Sister', serif;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  color: #002e40; }
+
+.why-list {
+  margin-top: 0px; }
+  .why-list li {
+    line-height: 28px; }
+
+a {
+  cursor: pointer; }
+
+ul {
+  list-style: none; }
+
+.bp_nav {
+  background-color: none;
+  width: 60%;
+  position: fixed;
+  right: 0px;
+
+ }
+
+nav {
+  text-align: center;
+  width: 800px;
+  margin: 0px 0px;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  width: 22%;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.shortnav {
+  width: 10%;
+}
+
+#longnav {
+  width: 30%;
+}
+
+nav li a {
+  font-size: 20px;
+  color: black;
+
+}
+
+a:hover {
+  color: rgb(150,0,1);
+  font-size: 22px;
+}
+
+nav li a.active {
+   color: gray;
+   font-size: 22px;
+   font-weight: bold;
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    width: 80%; }
+    nav li a {
+      font-size: 18px; } }
+
+section {
+  padding-top: 40px;
+  height: 1200px;
+  width: 100%; }
+  section .content {
+    margin: 0px auto;
+    max-width: 640px; }
+    @media screen and (max-width: 640px) {
+      section .content {
+        width: 90%; } }
+    section .content a {
+      color: #002e40; }
+
+/*section:nth-child(odd) {
+  background-color: #002e40;
+  color: white; }
+  section:nth-child(odd) a {
+    color: white; }*/
+
+.bottom-link {
+  margin-top: 80px;
+  font-style: italic; }
+
+.gist-meta {
+  display: none; }
+
+.file-data {
+  font-size: 14px; }
