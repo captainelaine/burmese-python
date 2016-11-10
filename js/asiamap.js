@@ -27,9 +27,14 @@ function mouseoverchange () {
   for (var i=0; i<asiaplace.length; i++){
     asiaplace[i].addEventListener("mouseover", function(event){
       event.target.setAttribute("fill","rgb(74,179,110)");
+      $(".tooltip").css("display","block");
+      $(".tooltip").css("top",event.clientY);
+      $(".tooltip").css("left",event.clientX)
+      $(".tooltip").text(this.id);
     });
     asiaplace[i].addEventListener("mouseout", function(event){
       event.target.setAttribute("fill","#C5E68E");
+      $(".tooltip").css("display","none");
     });
   }
 }
