@@ -40,21 +40,3 @@ function mouseoverchange () {
 }
 
 mouseoverchange();
-
-
-// function empplace () {
-//   for (var i=0; i< asiaplace.length; i++){
-//     asiaplace[i].addEventListener("mouseover",function(event){
-//       event.target.style.color = "orange";
-//     });
-//     asiaplace[i].addEventListener("mouseout",function(event){
-//       event.target.setAttribute("fill","red");
-//     })
-//     }
-// }
-// empplace();
-
-// <style type="text/css">
-// 	.st0{fill:#B3B3B3;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:3.9937;}
-// 	.st1{fill:#C5E68E;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:3.9937;}
-// </style>

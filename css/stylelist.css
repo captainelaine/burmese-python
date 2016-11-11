@@ -291,7 +291,7 @@ section .content {
 
 #aboutfirst {
   width:50%;
-    min-width: 650px;
+  min-width: 650px;
   margin-top: 2%;
   margin-left: 15%;
   margin-bottom: 2%;
@@ -480,9 +480,6 @@ section .content {
   margin-bottom: 2%;
 
 }
-
-
-
 
 .tooltip {
   font-family: 'Cardo', serif;
