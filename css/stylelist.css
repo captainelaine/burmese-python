@@ -55,7 +55,7 @@ nav li a {
 }
 
 .slide1 {
-  background: url(../image/homepage3.png) no-repeat center;
+  background: url(../image/drawhomepage.jpg) no-repeat center;
   background-size: cover;
   animation: fade 30s infinite
   -webkit-animation: fade 25s infinte;
@@ -78,13 +78,14 @@ nav li a {
 }
 
 h3 {
-  left:1%;
+ left:1%;
  top:50%;
  z-index: 1000;
  font-family: 'Abril Fatface', cursive;
  font-size: 70px;
  position: absolute;
  color:black;
+ text-shadow: 2px 2px white;
 }
 
 h4 {
@@ -97,6 +98,7 @@ h4 {
   position: absolute;
   color:black;
   font-weight: 2000;
+  text-shadow: 2px 2px white;
 }
 
 #h42 {
@@ -110,22 +112,22 @@ h4 {
 @keyframes fade
 {
   0%   {opacity:1}
-  44% { opacity: 0}
-  77% { opacity: 0}
+  33% { opacity: 0}
+  66% { opacity: 0}
   100% { opacity: 1}
 }
 @keyframes fade2
 {
   0%   {opacity:0}
-  44% { opacity: 1}
-  77% { opacity: 0 }
+  33% { opacity: 1}
+  66% { opacity: 0 }
   100% { opacity: 0}
 }
 @keyframes fade3
 {
   0%   {opacity:0}
-  44% { opacity: 0}
-  77% { opacity: 1}
+  33% { opacity: 0}
+  66% { opacity: 1}
   100% { opacity: 0}
 }
 
@@ -225,7 +227,7 @@ nav li {
   margin-right:3%;
   background-color: #f9f9f9;
   min-width: 150px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px;
 }
 
 .dropdown-content a {
@@ -242,6 +244,7 @@ nav li {
 }
 .dropdown:hover .dropdown-content {
   display: block;
+  /*rgba(0,0,0,0.2)*/
 }
 
 nav li a {
@@ -249,6 +252,7 @@ nav li a {
   color: black;
   font-weight: bolder;
   font-family: 'Bree Serif', sans-serif;
+  border-bottom: solid 2.5px none;
 }
 
 nav a:hover {
@@ -297,12 +301,24 @@ section .content {
 #aboutfirst {
   width:50%;
   min-width: 650px;
-  margin-top: 2%;
+  margin-top: 1%;
   margin-left: 15%;
+  margin-bottom: 2%;
+}
+
+#about {
   margin-bottom: 2%;
 }
 .largeimage {
   width: 100%;
+  border: 1px solid lightgray
+
+}
+.largeimage p {
+  font-size: 8px;
+  color:gray;
+  margin-top: 0%;
+  margin-left: 2%;
 }
 
 #asiaintro {
@@ -365,10 +381,12 @@ section .content {
 }
 
 #clickfont {
+  float: clear;
   padding-top: 2%;
   margin-left: 20%;
   font-style: italic;
   font-family: 'Bree Serif', sans-serif;
+  font-size: 22px;
 
 }
 .insidewriting {
@@ -474,6 +492,29 @@ section .content {
  background-size: cover;
 }
 
+#opinionbg {
+  width: 100%;
+  height: 500px;
+  background: url("../image/bgopinion.png") no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#opiniontitle {
+  width: 35%;
+  /*z-index:100;*/
+  font-family: 'Abril Fatface', cursive;
+  font-size: 50px;
+  color:black;
+  text-align: right;
+  line-height: 70px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  text-shadow: 2px 2px white;
+}
+
+
 #flbp {
   padding-top: 5%;
 }
@@ -492,4 +533,183 @@ section .content {
   width: 100px;
   height: 50px;
   position: fixed;
+}
+
+
+
+#Leo {
+  width:47%;
+  min-width: 650px;
+  margin-left: 15%;
+  margin-bottom: 2%;
+}
+
+#Leopic {
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 15%;
+  border-bottom: lightgray solid 1px;
+}
+
+#Leopic li{
+  display: inline-block;
+  width: 10%;
+}
+#leotitle {
+  border-radius: 50%;
+  border: lightgray solid 1px;
+}
+#Leopic li img {
+  width: 70%;
+  margin-left: 10%;
+}
+#Leopic li p {
+  width: 450%;
+  font-family: 'Bree Serif', sans-serif;
+  padding-bottom: 10%;
+}
+
+#leosanchez {
+  margin-left: 4%;
+  margin-top: 2%;
+  width: 40%;
+  float: right;
+  border: lightgray solid 1px;
+}
+#leopicture1 {
+  width: 100%;
+}
+#leosanchez p {
+  margin-top: -2%;
+  font-size: 8px;
+  color: gray;
+  text-align: center;
+}
+
+#leosanchez2 {
+  margin-right: 4%;
+  margin-top: 2%;
+  width: 40%;
+  float: left;
+  border: lightgray solid 1px;
+}
+#leopicture2 {
+  width: 100%;
+}
+
+#leosanchez2 p {
+  margin-top: -2%;
+  font-size: 8px;
+  color: gray;
+  text-align: center;
+}
+
+#Joe {
+  width:47%;
+  min-width: 650px;
+  margin-left: 15%;
+  margin-bottom: 2%;
+}
+
+#Joepic {
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 15%;
+  border-bottom: lightgray solid 1px;
+}
+
+#Joepic li{
+  display: inline-block;
+  width: 10%;
+}
+#joetitle {
+  border-radius: 55%;
+  border: lightgray solid 1px;
+}
+#Joepic li img {
+  width: 70%;
+  margin-left: 10%;
+}
+#Joepic li p {
+  width: 400%;
+  font-family: 'Bree Serif', sans-serif;
+  padding-bottom: 10%;
+}
+
+#joews {
+  width: 100%;
+  float: left;
+  margin-top: 3%;
+  border: lightgray solid 1px;
+}
+#joepicture1 {
+  width: 100%;
+}
+
+#joews p {
+  margin-top: 0%;
+  font-size: 8px;
+  color: gray;
+  text-align: center;
+}
+
+#joews2 {
+  width: 45%;
+  float: right;
+  margin-top: 3%;
+  margin-left: 6%;
+  border: lightgray solid 1px;
+}
+#joepicture2 {
+  width: 100%;
+}
+
+#joews2 p {
+  font-size: 8px;
+  color: gray;
+  margin-top: -2%;
+  text-align: center;
+}
+
+#pic {
+  width:70%;
+  margin-top: -5%;
+  min-width: 650px;
+  margin-left: 15%;
+  margin-bottom: 2%;
+}
+
+#vlightbox0 {
+  padding-bottom: 2%;
+  border-bottom: lightgray solid 1px;
+}
+
+#me {
+ padding-top: 11%;
+  width:100%;
+  min-width: 600px;
+  text-align: center;
+  border-top: lightgray solid 2px;
+
+}
+
+#zhoupic {
+  margin-left: 40%;
+  width: 20%;
+
+}
+
+#zhou {
+  width: 50%;
+  border-radius: 50%;
+
+}
+
+#infozhou {
+  text-align: center;
+}
+
+.thankyou {
+  font-size: 13px;
+  color: gray;
 }

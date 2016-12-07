@@ -30,3 +30,7 @@ function resize(x) {
        $(this).unbind("inview");
    }
  });
+
+$("#bounce").on("click",function(){
+  window.location = "#about";
+});

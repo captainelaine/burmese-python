@@ -4,19 +4,13 @@
   <meta charset="UTF-8" />
    <title>Kill or Help? Burmese Python</title>
    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
-   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script> -->
-   <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-   <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
    <script src="http://d3js.org/d3.v3.min.js"></script>
    <script src="http://d3js.org/topojson.v1.min.js"></script>
    <script src="https://d3js.org/queue.v1.min.js"></script>
    <script src="js/scrollIt.js"></script>
-  <script src="js/scrollreveal.js"></script>
-   <!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script> -->
+   <script src="js/scrollreveal.js"></script>
    <script src="js/jquery.inview.js"></script>
    <link href="css/stylelist.css" rel='stylesheet'>
-   <!-- <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" /> -->
    <link href="css/skinlinetrade.css" rel="stylesheet">
    <link href="css/mapstyle.css" rel="stylesheet">
 
@@ -52,12 +46,13 @@
     // $.noConflict();
 
    $(function() { $.scrollIt(); });
-    window.sr = ScrollReveal();
+    // window.sr = ScrollReveal();
    $('.bp_nav').hide();
    $(window).scroll(function() {
      if ($(this).scrollTop() > innerHeight)
       {
          $('.bp_nav').fadeIn();
+         $('#about').fadeIn();
       }
      else
       {
@@ -66,52 +61,20 @@
   });
 
    </script>
-   </head>
+   		<!-- Start VisualLightBox.com HEAD section -->
+		<link rel="stylesheet" href="index_files/vlb_files0/vlightbox0.css" type="text/css" />
+		<link rel="stylesheet" href="index_files/vlb_files0/visuallightbox.css" type="text/css" media="screen" />
+<!--script src="index_files/vlb_engine/jquery.min.js" type="text/javascript"></script-->
+		<script src="index_files/vlb_engine/visuallightbox.js" type="text/javascript"></script>
+		<!-- End VisualLightBox.com HEAD section -->
+</head>
 
 
  <body>
-   <div class="bp_nav">
-     <a href="#homepage"><img src="image/iconlogo.png" id="logo"></img></a>
-     <nav id="effect">
-     <ul>
-         <li id="firstnav">
-          <a data-scroll-nav="0">Home</a>
-         </li>
-         <li class="dropdown">
-          <a class="dropbtn" class='active' data-scroll-nav='1'>About</a>
-
-          <div class="dropdown-content">
-            <a href="#asiabp">South Asia</a>
-            <a href="#flbp">South Florida</a>
-          </div>
-         </li>
-         <li class ="dropdown">
-           <a class="dropbtn" data-scroll-nav='2'>Opinions</a>
-
-           <div class="dropdown-content">
-             <a href="#">Scientist</a>
-             <a href="#">Pet Owner</a>
-           </div>
-         </li>
-         <li id="sp">
-           <a data-scroll-nav='3'>Gallery</a>
-
-         </li>
-         <li id="gallery">
-           <a data-scroll-nav='4'>Contact</a>
-
-         </li>
-         <li id="twitter">
-           <a href="https://twitter.com/share" class="twitter-share-button" data-text="I find this website interesting! file:///Users/Captainelaine/Documents/Education/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-python/burmese-python/burmese-python.html#about" data-show-count="false">Tweet</a><script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
-         </li>
-      </ul>
-     </nav>
-   </div>
 
    <div class = "contentcontainer">
    <div id="homepage" data-scroll-index = "0">
     <div class="homepage">
-
      <div class="slide1">
     </div>
      <div class="slide2">
@@ -124,12 +87,44 @@
 
    <section>
      <div class="bounce">
-       <img src="image/arrow1.png" class="bounce" href="#arrowarrive"></img>
+       <img src="image/arrow1.png" class="bounce" id="bounce" href="#arrowarrive"></img>
      </div>
    </section>
    </div>
 
    <section class="scroll">
+     <div class="bp_nav">
+       <a href="#homepage"><img src="image/iconlogo.png" id="logo"></img></a>
+       <nav id="effect">
+       <ul>
+           <li id="firstnav">
+            <a data-scroll-nav="0">Home</a>
+           </li>
+           <li class="dropdown">
+            <a class="dropbtn" class='active' data-scroll-nav='1'>About</a>
+            <div class="dropdown-content">
+              <a href="#asiabp">South Asia</a>
+              <a href="#flbp">South Florida</a>
+            </div>
+           </li>
+           <li class ="dropdown">
+             <a class="dropbtn" data-scroll-nav='2'>Opinions</a>
+             <div class="dropdown-content">
+               <a href="#Leopic">Leo Sanchez</a>
+               <a href="#Joepic">Joe Wasilewski</a>
+             </div>
+           </li>
+           <li id="infozhouzhou">
+             <a data-scroll-nav='4'>Contact</a>
+
+           </li>
+           <li id="twitter">
+             <a href="https://twitter.com/share" class="twitter-share-button" data-text="I find this website interesting! file:///Users/Captainelaine/Documents/Education/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1-python/burmese-python/burmese-python.html#about" data-show-count="false">Tweet</a><script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+           </li>
+        </ul>
+       </nav>
+     </div>
+
      <div class='content' id="about" data-scroll-index='1'>
       <div id="aboutfirst">
        <h1 id="arrowarrive">About Burmese Python</h1>
@@ -140,7 +135,8 @@
        </p>
       </div>
     <div class="largeimage" style="max-width:100%;">
-       <img class="mySlides" src="image/aboutfirst1.jpg" style="width:100%"></img>
+       <img class="mySlides" id="caption" src="image/aboutfirst1.jpg" style="width:100%" ></img>
+       <p>Photo provided by Wikimedia</p>
     </div>
       <div id="asiabp">
         <div id="asiaintro">
@@ -1438,38 +1434,122 @@
   </div>
   <div id="vis"></div>
 
-   <p id="clearfloat">In addition, because of its large size, adult Burmese Python have few predators, with alligators and humans being the exceptions, however, in some cases, Burmese Python comes out even in the battle with alligators, sometimes alligator can also become the food of the big snakes.When talking about the eating habits of Burmese Python, studies about this show that they prey not only upon native mammal species, such as Norway rats, foxed and rabbits, they are also threatening other endangered species in Florida, for example, the endangered wood rats in Key Largo.</p><p id="introscroll">Play with the below map,try to find out if there are Burmese Pythons caught near your home.</br>This map is developed by The University of Georgia - Center for Invasive Species and Ecosystem Health.</br><a href="https://www.eddmaps.org/florida/distribution/viewmap.cfm?sub=20461">Original map site</a></p>
+   <p id="clearfloat">In addition, because of its large size, adult Burmese Python have few predators, with alligators and humans being the exceptions, however, in some cases, Burmese Python comes out even in the battle with alligators, sometimes alligator can also become the food of the big snakes.When talking about the eating habits of Burmese Python, studies about this show that they prey not only upon native mammal species, such as Norway rats, foxed and rabbits, they are also threatening other endangered species in Florida, for example, the endangered wood rats in Key Largo.</p>
+   <p id="introscroll">Play with the below map,try to find out if there are Burmese Pythons caught near your home.</br>This map is developed by The University of Georgia - Center for Invasive Species and Ecosystem Health.</br><a href="https://www.eddmaps.org/florida/distribution/viewmap.cfm?sub=20461">Original map site</a></p>
    <div id="scrollmap">
    <iframe src="http://maps.eddmaps.org/google/eradication.cfm?notitle&map=distribution&lat=27.859033&zoom=7&lng=-84.342285&sub=20461&subsite=florida" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500" width="960" scrolling="no" seamless></iframe></div>
+   <div id="withpic">
    <p id="banner">In its effort to prevent the continuous spread of non-native Burmese Python in the wild in the United States. <a href="https://www.fws.gov/northeast/le/stories/snakerule.html">The U.S Fish and Wildlife Service </a>banned the “importation and interstate transportation” of the Burmese Python in March 2012.The rule specifically prohibited the interstate transport and importation live snakes , their viable reproductive assets such as sperm and eggs, or any hybrids of the listed snake.
    </p>
+   <div id="pythonchallpic"><img id="pythonchall" src="image/pythonchallenge.jpg"></img><p>2016 Python Challenge</br>(Photo provided by Flickr)</p></div>
    <p id="pythonch">
      Besides, aiming to engage more people into action of removing python from Florida, the government started hold <a href="http://pythonchallenge.org/">“Python Challenge” </a>from 2013, giving permitted hunters chances to hunt and kill python by themselves in several places in Florida. According to the length, amount and weight, hunters will be awarded different amount of money. In 2016 Python Challenge, the winner team lead by Bill Booth hunted for 33 Burmese Python through the game and gained 5000 dollar. At the same time, they also hunted the longest Burmese Python: 15 feet and 125 pounds, which made they own another 3000 dollar.</p>
-     <img id="pythonchall" src="image/pythonchallenge.jpg"></img>
+
      <p id="however">However, due to the high awards and the regulation which didn’t prevent the hunters killing pythons. During the game, bolt guns and fire arms are suggested to be used while hunting, and hunters usually just killed the python without thinking instead of keeping them alive, because it will be much easier for them to get a big snake.</br>Some animal rights groups have blasted the event for the unethical way the snakes are killed.
    </p>
+ </div>
  </div>
  </div>
    </section>
 
    <section class="scroll" >
      <div class='content' id="vs" data-scroll-index='2'>
-       <h1>Scientist VS Pet Owner</h1>
-       <p>The Burmese python (Python bivittatus) is one of the five largest species of snakes in the world (about the third-largest as measured either by length or weight). It is native to a large variation of tropic and subtropic areas of South and Southeast Asia. Until 2009, it was considered a subspecies of Python molurus, but now is recognized as belonging to a distinct species.[3]The Burmese python (Python bivittatus) is one of the five largest species of snakes in the world (about the third-largest as measured either by length or weight). It is native to a large variation of tropic and subtropic areas of South and Southeast Asia. Until 2009, it was considered a subspecies of Python molurus, but now is recognized as belonging to a distinct species.[3]The Burmese python (Python bivittatus) is one of the five largest species of snakes in the world (about the third-largest as measured either by length or weight). It is native to a large variation of tropic and subtropic areas of South and Southeast Asia. Until 2009, it was considered a subspecies of Python molurus, but now is recognized as belonging to a distinct species.[3]</p>
+       <div id="opinionbg" style="max-width:100%;">
+         <h7 id="opiniontitle">What's the future of </br>the Burmese Python in Florida</h7>
+       </div>
+       <div id="Leopic">
+         <li><img src="image/leotitle.jpg" id="leotitle"></img></li>
+         <li><p id="name"><em>Leo Sanchez: </br>Burmese Python Removement Volunteer</em></p></li>
+       </div>
+       <div id="Leo">
+       <p id="LeoS1">Instead of defining him as a Burmese Python hunter, I prefer to call him a Python remove volunteer or a Python lover. He never hunts Burmese Python to exchange their skins or meat for money, actually he has barely achieved benefits from the Burmese Python he hunted. He volunteers to remove Burmese Pythons just for fun and wants to protect the ecosystem of the Everglades.</p>
+       <div id="leosanchez"><img src="image/leopicture1.JPG" id="leopicture1"></img><p>Python Removement Volunteer: Leo Sanchez </br>(Photo taken by Zhou Fang)</p></div>
+
+       <p id="LeoS2">“I will never kill one python, I love and respect them,” Leo kept saying in the day I spent with him. He also said he usually used his bare hands instead of any other tools which would hurt them.</p>
+
+       <p id="LeoS3">Every time Leo got a Burmese Python, he had to donate it to the University or other research centers because he has no permission from Florida Fish and Wildlife Conservation Commission (Since 2012, it became illegal to own a Burmese Python in Florida after the Fish and Wildlife Conservation Commission banned importation and instate transportation of Burmese Python inside Florida). “I don't want to do this because I know they (the Burmese Python) will be dead there,” he said. “But usually the University will use humanistic way to put them down, for example I know, they will use gas to kill them without pain.”</p>
+
+       <p id="LeoS4">There is no doubt that Leo has lots of knowledge about Burmese Python, which is different from scientists gain knowledge from researching, Leo learned from hundreds of trips he had in the Everglades. “Actually pythons usually won’t live along the water, water is just one place they can hide and escape when they are being traced,” Leo also told me temperature and weather are the keys to find Burmese Pythons and other snakes. Early morning and evening with some sun are the best chances because pythons, which are cold blood animals need sunshine to keep their life. Additional, the stone crack is their favorite home, it will be better if there is water resource nearby. You will have bigger chance to see snakes across the road if there are rocks and stream on the two sides of the road.</p>
+
+       <video width="800" height="480" controls>
+         <source src="video/Leo3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+       </video>
+
+       <p id="LeoS5">Research has confirmed that Burmese Pythons are responsible for the rapidly decrease of the number of small mammals in the Everglades, which includes a lot of endangered species, for example, wood rats.</p>
+
+       <p id="LeoS6">Although Leo is a big fan of the Burmese Python, he has never denied the huge threat to the ecosystem of the Everglades given by the Burmese Python. “They must be removed, otherwise the mammals will disappear in the future, they eat everything, even includes alligators,” but Leo doesn’t agree that killing them is the only solution. “They are pythons, they are just doing things by their instincts and this is not their fault. I wish there will be a way which can remove them out of Florida to their native area, which is Asia, without hurts them.”</p>
+
+       <div id="leosanchez2"><img src="image/pythonbite.JPG" id="leopicture2"></img><p>Leo was bitten by a python on chest </br> (Photo provided by Leo Sanchez)</div>
+
+       <p id="LeoS7">As a python remove volunteer, Leo got permission from Fish and Wildlife Conversion Commission which allows him to hurt Burmese Python along the edge of the Everglades. However, Leo knows deeply that in the shallows of the center areas of the Everglades, there are bigger Burmese Pythons bleeding. Only hurting small pythons along the edge has rare effect on controlling the number of big snakes. Burmese Pythons have striking reproductive capability, a large female Burmese Python can carry up to one hundred eggs in its body. From Leo’s opinion, the government should give people like him more access to the center of Everglades, once they can walk deeper into the center shallows, there will be more chances to remove those “big guys”.</p>
+     </div>
+
+     <div id="Joepic">
+       <li><img src="image/Joetitle.JPG" id="joetitle"></img></li>
+       <li><p id="name"><em>Joe Wasilewski:</br> Wildlife Biologist</em></p></li>
+     </div>
+     <div id="Joe">
+     <p id="Joe1">Joe Wasilewski’s backyard of his home is just like a minisized park. There is a large cage in the middle of it, inside of which lives various kinds of reptiles and a dinosaur model is standing just besides the cage. Anybody comes in this backyard can be sure of what kind of owner the house has --- a reptile lover.</p>
+
+     <p id="Joe2">Joe is both a wildlife biologist and a big lover of reptiles. He has been involved in the Burmese Pythons research since the first time they were discovered in the Everglades, and it was he and one of his colleagues that found the first hatching Burmese Python and knew they were actually breeding out there.</p>
+
+     <div id="joews"><img src="image/joewithpython.png" id="joepicture1"></img><p>Joe with his Burmese Python (Photo taken by Zhou Fang)</p></div>
+
+     <p id="Joe3">Recently, Joe is doing a research about Radiotelemetry and Control of Burmese Python. Joe introduced that in order to understand the extent of python’s impact on Florida’s ecosystems and come out methods to control the population. They are using dogs, radiotelemetry and other technology (GPS transmitters, accelerometers) to learn what habitats Burmese Pythons have, how far they move and where are their breeding groups live. Usually they will put the sensor into the body of the caught Burmese Pythons and track them. They can find what kinds of animals they love to eat, which can help them determine what animals are in risk. “We have found rats, including endangered wood rats, rabbits, even deer inside their bodies,” Joe added that they can also learn what temperature and weather they like, what kind of environment they love to stay, which can help them find out methods to find them and control their number.</p>
+
+     <p id="Joe4">Joe doesn’t think that transporting Burmese Pythons back to Asia, where they come from, can be a way to control the huge number of these big snakes. “Scientifically, logistically, legally, it’s not going to happen at this time,” Joe explained that legally, the Fish and Wildlife Conversation Commission banned the importation and instate transportation of Burmese Python inside Florida. From biology, once the Burmese Python lived in Florida, their bodies will carry message that indicates they are resistant to Florida and they will bring bad impacts on the Asia ecosystem once they are brought back. From now, the only way we can do is use humanized way to remove them.</p>
+
+     <video width="800" height="480" controls>
+       <source src="video/joe22.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+     </video>
+
+     <p id="Joe5">To the opinion that it was the pet owners’ release of Burmese Pythons that led the out of control of these big killers, Joe said that it was true that pet owners are releasing pythons, but the main reason of the invasion was due to the Andrew Hurricane in 1992. There was an importer of wildlife just next to the Everglades and there were 900 pythons were blown to the Everglades. Related researches also show that the number of Burmese Pythons strikes dramatically after 2000.</p>
+
+     <div id="joews2"><img src="image/Joetitle.JPG" id="joepicture2"></img><p>Wildlife Biologist: Joe Wasilewski </br> Photo taken by Zhou Fang</p></div>
+
+     <p id="Joe6">As a legal Burmese Python owner, Joe has two Burmese Python at home. “I don’t consider they are my pets, they are my employees,” Joe always jokes. In fact, besides research works, Joe also attends Television productions and educational shows with his Burmese Pythons, for example, he just finished “Reptile Show” in Jungle Island of Zoo Miami. “People should do research before they decided to have any kinds of pets,” he said. “They should learn about how big they will grow up to and what kind of food they need.” </p>
+
+     <p id="Joe7">Joe said the main reason why pet owners release Burmese Pythons into wild is that they underestimate the growth rate and attack ability. And some of them just keep feeding the Burmese Python which leads them grows too big for people to handle. That’s why he wants to do these shows, not only sharing his research but telling people how to raise their reptile pets correctly.</p>
+   </div>
      </div>
    </section>
 
-   <section class="scroll" >
+   <!-- <section class="scroll" >
      <div class='content' id="pic" data-scroll-index='3'>
-       <h1>Gallery</h1>
-       <p>The Burmese python (Python bivittatus) is one of the five largest species of snakes in the world (about the third-largest as measured either by length or weight). It is native to a large variation of tropic and subtropic areas of South and Southeast Asia. Until 2009, it was considered a subspecies of Python molurus, but now is recognized as belonging to a distinct species.[3]The Burmese python (Python bivittatus) is one of the five largest species of snakes in the world (about the third-largest as measured either by length or weight). It is native to a large variation of tropic and subtropic areas of South and Southeast Asia. Until 2009, it was considered a subspecies of Python molurus, but now is recognized as belonging to a distinct species.[3]The Burmese python (Python bivittatus) is one of the five largest species of snakes in the world (about the third-largest as measured either by length or weight). It is native to a large variation of tropic and subtropic areas of South and Southeast Asia. Until 2009, it was considered a subspecies of Python molurus, but now is recognized as belonging to a distinct species.[3]</p>
-     </div>
-   </section>
+       <h1>Gallery</h1> -->
 
-   <section class="scroll" >
-     <div class='content' data-scroll-index='4' id="me">
-       <h1>Contact me</h1>
-       <p>The Burmese python (Python bivittatus) is one of the five largest species of snakes in the world (about the third-largest as measured either by length or weight). It is native to a large variation of tropic and subtropic areas of South and Southeast Asia. Until 2009, it was considered a subspecies of Python molurus, but now is recognized as belonging to a distinct species.[3]The Burmese python (Python bivittatus) is one of the five largest species of snakes in the world (about the third-largest as measured either by length or weight). It is native to a large variation of tropic and subtropic areas of South and Southeast Asia. Until 2009, it was considered a subspecies of Python molurus, but now is recognized as belonging to a distinct species.[3]The Burmese python (Python bivittatus) is one of the five largest species of snakes in the world (about the third-largest as measured either by length or weight). It is native to a large variation of tropic and subtropic areas of South and Southeast Asia. Until 2009, it was considered a subspecies of Python molurus, but now is recognized as belonging to a distinct species.[3]</p>
+             <!-- Start VisualLightBox.com BODY section id=0 -->
+         <!-- <div id="vlightbox0">
+          <a class="vlightbox0" href="index_files/vlb_images0/6n6a9705.jpg" title="6N6A9705"><img src="index_files/vlb_thumbnails0/6n6a9705.jpg" alt="6N6A9705"/></a>
+          <a class="vlightbox0" href="index_files/vlb_images0/6n6a9707.jpg" title="6N6A9707"><img src="index_files/vlb_thumbnails0/6n6a9707.jpg" alt="6N6A9707"/></a>
+          <a class="vlightbox0" href="index_files/vlb_images0/6n6a9766.jpg" title="6N6A9766"><img src="index_files/vlb_thumbnails0/6n6a9766.jpg" alt="6N6A9766"/></a>
+          <a class="vlightbox0" href="index_files/vlb_images0/_01a4041.jpg" title="_01A4041"><img src="index_files/vlb_thumbnails0/_01a4041.jpg" alt="_01A4041"/></a>
+          <a class="vlightbox0" href="index_files/vlb_images0/6n6a9648.jpg" title="6N6A9648"><img src="index_files/vlb_thumbnails0/6n6a9648.jpg" alt="6N6A9648"/></a>
+          <a class="vlightbox0" href="index_files/vlb_images0/6n6a9643.jpg" title="6N6A9643"><img src="index_files/vlb_thumbnails0/6n6a9643.jpg" alt="6N6A9643"/></a>
+          <a class="vlightbox0" href="index_files/vlb_images0/_01a3885.jpg" title="_01A3885"><img src="index_files/vlb_thumbnails0/_01a3885.jpg" alt="_01A3885"/></a>
+          <a class="vlightbox0" href="index_files/vlb_images0/_01a3984.jpg" title="_01A3984"><img src="index_files/vlb_thumbnails0/_01a3984.jpg" alt="_01A3984"/></a>
+          <a class="vlightbox0" href="index_files/vlb_images0/2m4a9455.jpg" title="2M4A9455"><img src="index_files/vlb_thumbnails0/2m4a9455.jpg" alt="2M4A9455"/></a>
+          <span class="vlb"><a href="http://visuallightbox.com">lightbox gallery with thumbnails</a> by VisualLightBox.com v6.0m</span>
+         </div>
+       <script src="index_files/vlb_engine/vlbdata0.js" type="text/javascript"></script> -->
+<!--
+     </div>
+   </section> -->
+
+
+	<!-- End VisualLightBox.com BODY section -->
+    <section class="scroll" >
+       <div class='content' data-scroll-index='4' id="me">
+       <div id="zhoupic"><img src="image/zhou.jpg" id="zhou"></img></div>
+       <div id="infozhou">
+       <p>Journalism Graduate Student at University of Miami</p>
+       <p><em>Email: captainelainefz@gmail.com</em></p>
+       <p><em><a href="http://captainelainefz.wixsite.com/zhoufang">Personal Website</a></em></p>
+       <p class="thankyou">Thank you for: </br>Pictures from Wikimedia, Pixal and Everglades National Park </br>Data from Everglades National Park, CITES.</br>Help from Leo Sanchez and Joe Wasilewski.</br>Professors: Richard Beckman, Candace Barbot, Alberto Cairo, Erin Brown.</p>
+       <div class="thankyou">Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+       </div>
      </div>
    </section>
 
@@ -1484,23 +1564,13 @@
     <p class="name"></p>
     <p class="number">Burmese Python found: </p>
     <div class="val"></div>
-</div>
- </body>
+ </div>
+</body>
 
-  <script>
-  sr.reveal('.content');
-  $(".bounce").click(function(){
-   window.location="#about"
- });
-  </script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
-
-
   <script src="js/asiamap.js"></script>
   <script src="js/mainpage.js"></script>
-   <script src="js/pythoninside.js"></script>
-   <script src="js/skinforpython.js"></script>
-   <script src="js/mapfl.js"></script>
-
-
+  <script src="js/pythoninside.js"></script>
+  <script src="js/skinforpython.js"></script>
+  <script src="js/mapfl.js"></script>
  </html>
