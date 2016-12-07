@@ -29,32 +29,32 @@
 #scrollmap {
     margin-left: 15%;
 }
-#banner {
-  width:50%;
+
+#withpic {
+  width:48%;
   min-width: 650px;
   margin-left: 15%;
+  margin-bottom: 2%;
 }
 
-#pythonch {
-  width:30%;
-  min-width: 450px;
-  margin-left: 15%;
-  margin-right: 3%;
+#pythonchallpic {
+  width: 48%;
+  float: right;
+  margin-top: 6%;
   margin-bottom: 2%;
-  float:left;
+  margin-left: 8%;
+  border: 1px solid lightgray;
 }
 
 #pythonchall {
-  margin-top: 1.5%;
-  width: 30%;
-  float:left;
+  width: 100%;
 }
-#however {
-  clear:both;
-  width: 50%;
-  min-width: 500px;
-  margin-left: 15%;
-  margin-bottom: 2%;
+
+#pythonchallpic p {
+  margin-top:0%;
+  font-size: 8px;
+  color: gray;
+  text-align: center;
 }
 #strongem {
   font-size: 25px;
