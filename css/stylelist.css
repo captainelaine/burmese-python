@@ -85,7 +85,7 @@ h3 {
  font-size: 70px;
  position: absolute;
  color:black;
- text-shadow: 2px 2px white;
+ text-shadow: 5px 5px white;
 }
 
 h4 {
@@ -98,7 +98,7 @@ h4 {
   position: absolute;
   color:black;
   font-weight: 2000;
-  text-shadow: 2px 2px white;
+  text-shadow: 5px 5px white;
 }
 
 #h42 {
