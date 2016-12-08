@@ -154,6 +154,7 @@ ul {
   z-index:1000;
   display: inline-block;
   margin-left: 0%;
+    font-family: 'Bree Serif', sans-serif;
  }
 
 #logo {
@@ -191,7 +192,8 @@ nav {
   -webkit-box-shadow: 0 4px 6px -6px #222;
   -moz-box-shadow: 0 4px 6px -6px #222;
   box-shadow: 0 4px 6px -6px #222;
-  padding-left: 2.5%
+  padding-left: 2.5%;
+    font-family: 'Bree Serif', sans-serif;
 }
 
 nav ul {
