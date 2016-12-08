@@ -384,6 +384,7 @@ section .content {
 
 #clickfont {
   float: clear;
+  margin-top: 3%;
   padding-top: 2%;
   margin-left: 20%;
   font-style: italic;
