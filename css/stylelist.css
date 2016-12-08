@@ -112,7 +112,8 @@ h4 {
 @keyframes fade
 {
   0% { opacity:1 }
-  50% { opacity:1
+  50% {
+    opacity:1
   }
   66% { opacity: 0}
   100% { opacity: 1}
@@ -169,6 +170,7 @@ ul {
   width: 42%;
   float:left;
   margin-right: 7%;
+  margin-bottom: 3%;
 }
 
 #intromap {
@@ -334,11 +336,12 @@ section .content {
   margin-left: 30%;
 }*/
 
-#pythonfenjie {
+/*#pythonfenjie {
+
   position:relative;
   margin-top: 2%;
   margin-left: -5%;
-}
+}*/
 .content p {
   margin-bottom: 0.5%;
 }
@@ -355,7 +358,7 @@ section .content {
   position:relative;
   width:70%;
   display: block;
-  left:14%;
+  left:8%;
 }
 #fenjie1 {
   position: absolute;
@@ -384,10 +387,9 @@ section .content {
 }
 
 #clickfont {
-  float: clear;
-  margin-top: 3%;
+  clear: both;
   padding-top: 2%;
-  margin-left: 20%;
+  margin-left: 15%;
   font-style: italic;
   font-family: 'Bree Serif', sans-serif;
   font-size: 22px;
